@@ -1,0 +1,17 @@
+<h1>Nuevo-Post</h1>
+<form>
+  <div class="form-group">
+     
+    <label for="nombre">Nombre</label>
+    <input [(ngModel)]="nombre" name="nombre" type="text" class="form-control" id="nombre" placeholder="Ingrese nombre">
+    <small id="nombre" class="form-text text-muted">No olvide ingresar su nombre.</small> 
+  </div>
+
+  <div class="form-group">
+    <label for="post">Post</label>
+    <input [(ngModel)]="post" name="post" type="text" class="form-control" id="post" placeholder="Ingrese Post">
+    <small id="post" class="form-text text-muted">No olvide ingresar su post.</small>  
+  </div>
+ 
+  <button (click)="enviar()" type="button" class="btn btn-primary">Enviar</button>
+</form>
